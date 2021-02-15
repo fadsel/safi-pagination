@@ -120,3 +120,39 @@ Ther are other svg preloaders you could choose from here, For the sake of this e
     }
 }
 ```
+
+## API Details
+1. Reload Content (Default)
+```
+$safi.SafiPagination("reloadContents");
+```
+
+2. Reload Specific URL Contents with Changing Parts
+```
+$safi.SafiPagination("reloadURLContents",[
+    ".total-sales-div",
+    ".report-title",
+    ".filter-applied-warning",
+    ".side-options",
+    ".category"
+]);
+```
+
+3. Reload a Specific URL with Callback
+```
+$safi.SafiPagination("reloadContentsWithCallback",[
+    ".total-sales-div",
+    ".report-title",
+    ".filter-applied-warning",
+    ".side-options",
+    ".category"
+],function(){
+// when it finishes, do this ...
+console.log("Loading Stuff ...");
+});
+```
+
+
+# Disclaimer
+
+# License
